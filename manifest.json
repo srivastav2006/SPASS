@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "SPASS",
+  "version": "1.0",
+  "description": "A simple password manager for secure password storage and retrieval.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    
+    "128": "image.png"
+  }
+}

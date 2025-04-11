@@ -1,0 +1,179 @@
+/* popup.css */
+:root {
+    --primary-blue: #2a6dc9;
+    --light-blue: #4a85d8;
+    --dark-blue: #1a5bb0;
+    --primary-grey: #5a6a7e;
+    --light-grey: #e0e5eb;
+    --dark-grey: #343a40;
+    --white: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    width: 360px;
+    background-color: var(--white);
+  }
+  
+  .container {
+    padding: 15px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  header h1 {
+    color: var(--primary-blue);
+    font-size: 24px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--light-grey);
+  }
+  
+  .tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--primary-grey);
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--primary-blue);
+    font-weight: bold;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .search-container {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="url"],
+  input[type="password"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--dark-grey);
+    font-size: 14px;
+  }
+  
+  .password-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-input input {
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .toggle-btn {
+    background: var(--light-grey);
+    border: 1px solid var(--light-grey);
+    border-left: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .btn-save {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-save:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  .password-list {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .password-item {
+    padding: 12px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: var(--light-grey);
+    position: relative;
+  }
+  
+  .password-item h3 {
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .password-item p {
+    color: var(--dark-grey);
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .password-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-blue);
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  
+  .action-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .empty-message {
+    text-align: center;
+    color: var(--primary-grey);
+    padding: 20px;
+  }
